@@ -155,7 +155,7 @@ class ErickoApplicationTests extends AbstractTest{
 
 	@Test
 	public void deleteDevice() throws Exception{
-		String uri = "/gateways/5/devices"; //change gateway id
+		String uri = "/gateways/1/devices"; //change gateway id
 		PeripheralDevice device = new PeripheralDevice();
 		device.setStatus(true);
 		device.setVendorName("testDevice1");
@@ -183,7 +183,7 @@ class ErickoApplicationTests extends AbstractTest{
 	@Test
 	public void limitDevicePerGateway() throws Exception{
 
-		String uri = "/gateways/3/devices"; //change gateway id
+		String uri = "/gateways/1/devices"; //change gateway id
 		for (int i = 11; i <= 21; i++){ //try to create 11 devices
 			PeripheralDevice device = new PeripheralDevice();
 			device.setStatus(true);
